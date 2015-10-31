@@ -1,0 +1,869 @@
+Running: java -client -Dstorm.options= -Dstorm.service=storm-command -Dstorm.home=/usr/hdp/2.3.0.0-2557/storm -Dstorm.log.dir=/var/log/storm -Djava.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib -Dstorm.conf.file= -cp /usr/hdp/2.3.0.0-2557/storm/lib/curator-client-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-io-2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-common-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-storm-plugin-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/kryo-2.21.jar:/usr/hdp/2.3.0.0-2557/storm/lib/zookeeper.jar:/usr/hdp/2.3.0.0-2557/storm/lib/servlet-api-2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-core-1.1.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-jaxrs-1.8.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-cred-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-core-2.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-codec-1.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/logback-core-1.0.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.namespace-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/asm-4.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/slf4j-api-1.7.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-dataformat-smile-2.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-collections-3.2.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/logback-classic-1.0.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-devel-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hiccup-0.3.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/curator-framework-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/htrace-core-3.1.0-incubating.jar:/usr/hdp/2.3.0.0-2557/storm/lib/protobuf-java-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/noggit-0.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ambari-metrics-storm-sink.jar:/usr/hdp/2.3.0.0-2557/storm/lib/minlog-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/chill-java-0.3.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.logging-0.2.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-auth-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/joda-time-2.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/log4j-over-slf4j-1.6.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/reflectasm-1.07-shaded.jar:/usr/hdp/2.3.0.0-2557/storm/lib/java.classpath-0.2.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/snakeyaml-1.11.jar:/usr/hdp/2.3.0.0-2557/storm/lib/netty-3.9.0.Final.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jgrapht-core-0.9.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-cli-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-json-0.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/gson-2.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/eclipselink-2.5.2-M1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/math.numeric-tower-0.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clj-time-0.8.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpmime-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpcore-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/guava-11.0.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-logging-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-jetty-adapter-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/gmetric4j-1.0.7.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clojure-1.6.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/json-simple-1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/objenesis-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.cli-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/compojure-1.1.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ns-tracker-0.2.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-exec-1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/storm-core-0.10.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-mapper-asl-1.9.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-fileupload-1.2.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/guava-16.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jline-2.11.jar:/usr/hdp/2.3.0.0-2557/storm/lib/oncrpc-1.0.7.jar:/usr/hdp/2.3.0.0-2557/storm/lib/carbonite-1.4.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-lang-2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-audit-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger_solrj-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/disruptor-2.10.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-servlet-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-common-0.5.01740 [main] INFO  backtype.storm.utils.Utils - Using defaults.yaml from resources
+1857 [main] INFO  backtype.storm.utils.Utils - Using storm.yaml from resources
+2851 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-2557--1, built on 07/14/2015 12:48 GMT
+2851 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:host.name=sandbox.hortonworks.com
+2851 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.version=1.7.0_85
+2851 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2851 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.class.path=/usr/hdp/2.3.0.0-2557/storm/lib/curator-client-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-io-2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-common-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-storm-plugin-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/kryo-2.21.jar:/usr/hdp/2.3.0.0-2557/storm/lib/zookeeper.jar:/usr/hdp/2.3.0.0-2557/storm/lib/servlet-api-2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-core-1.1.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-jaxrs-1.8.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-cred-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-core-2.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-codec-1.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/logback-core-1.0.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.namespace-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/asm-4.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/slf4j-api-1.7.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-dataformat-smile-2.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-collections-3.2.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/logback-classic-1.0.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-devel-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hiccup-0.3.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/curator-framework-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/htrace-core-3.1.0-incubating.jar:/usr/hdp/2.3.0.0-2557/storm/lib/protobuf-java-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/noggit-0.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ambari-metrics-storm-sink.jar:/usr/hdp/2.3.0.0-2557/storm/lib/minlog-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/chill-java-0.3.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.logging-0.2.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-auth-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/joda-time-2.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/log4j-over-slf4j-1.6.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/reflectasm-1.07-shaded.jar:/usr/hdp/2.3.0.0-2557/storm/lib/java.classpath-0.2.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/snakeyaml-1.11.jar:/usr/hdp/2.3.0.0-2557/storm/lib/netty-3.9.0.Final.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jgrapht-core-0.9.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-cli-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-json-0.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/gson-2.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/eclipselink-2.5.2-M1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/math.numeric-tower-0.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clj-time-0.8.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpmime-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpcore-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/guava-11.0.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-logging-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-jetty-adapter-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/gmetric4j-1.0.7.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clojure-1.6.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/json-simple-1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/objenesis-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.cli-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/compojure-1.1.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ns-tracker-0.2.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-exec-1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/storm-core-0.10.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-mapper-asl-1.9.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-fileupload-1.2.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/guava-16.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jline-2.11.jar:/usr/hdp/2.3.0.0-2557/storm/lib/oncrpc-1.0.7.jar:/usr/hdp/2.3.0.0-2557/storm/lib/carbonite-1.4.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-lang-2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-audit-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger_solrj-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/disruptor-2.10.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-servlet-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-common-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/javax.servlet-2.5.0.v201103041518.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jersey-bundle-1.17.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-core-asl-1.9.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/cheshire-5.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-hdfs-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpclient-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clout-1.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-configuration-1.10.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clj-stacktrace-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tigris-0.1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.macro-0.1.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/javax.persistence-2.1.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/core.incubator-0.1.0.jar:target/storm-example-0.0.1-SNAPSHOT.jar:/usr/hdp/current/storm-supervisor/conf:/usr/hdp/2.3.0.0-2557/storm/bin
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/tmp
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:os.name=Linux
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:os.version=2.6.32-573.3.1.el6.x86_64
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:user.name=root
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:user.home=/root
+2852 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Client environment:user.dir=/root/cloudapp-mp3
+2901 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:zookeeper.version=3.4.6-2557--1, built on 07/14/2015 12:48 GMT
+2901 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:host.name=sandbox.hortonworks.com
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.version=1.7.0_85
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.vendor=Oracle Corporation
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.home=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.class.path=/usr/hdp/2.3.0.0-2557/storm/lib/curator-client-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-io-2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-common-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-storm-plugin-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/kryo-2.21.jar:/usr/hdp/2.3.0.0-2557/storm/lib/zookeeper.jar:/usr/hdp/2.3.0.0-2557/storm/lib/servlet-api-2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-core-1.1.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-jaxrs-1.8.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-cred-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-core-2.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-codec-1.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/logback-core-1.0.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.namespace-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/asm-4.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/slf4j-api-1.7.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-dataformat-smile-2.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-collections-3.2.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/logback-classic-1.0.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-devel-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hiccup-0.3.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/curator-framework-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/htrace-core-3.1.0-incubating.jar:/usr/hdp/2.3.0.0-2557/storm/lib/protobuf-java-2.5.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/noggit-0.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ambari-metrics-storm-sink.jar:/usr/hdp/2.3.0.0-2557/storm/lib/minlog-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/chill-java-0.3.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.logging-0.2.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-auth-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/joda-time-2.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/log4j-over-slf4j-1.6.6.jar:/usr/hdp/2.3.0.0-2557/storm/lib/reflectasm-1.07-shaded.jar:/usr/hdp/2.3.0.0-2557/storm/lib/java.classpath-0.2.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/snakeyaml-1.11.jar:/usr/hdp/2.3.0.0-2557/storm/lib/netty-3.9.0.Final.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jgrapht-core-0.9.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-cli-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-json-0.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/gson-2.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/eclipselink-2.5.2-M1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/math.numeric-tower-0.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clj-time-0.8.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpmime-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpcore-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/guava-11.0.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-logging-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-jetty-adapter-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/gmetric4j-1.0.7.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clojure-1.6.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/json-simple-1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/objenesis-1.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.cli-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/compojure-1.1.3.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ns-tracker-0.2.2.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-exec-1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/storm-core-0.10.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-mapper-asl-1.9.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-fileupload-1.2.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/guava-16.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jline-2.11.jar:/usr/hdp/2.3.0.0-2557/storm/lib/oncrpc-1.0.7.jar:/usr/hdp/2.3.0.0-2557/storm/lib/carbonite-1.4.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-lang-2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-audit-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger_solrj-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/disruptor-2.10.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ring-servlet-1.3.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/ranger-plugins-common-0.5.0.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/javax.servlet-2.5.0.v201103041518.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jersey-bundle-1.17.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/jackson-core-asl-1.9.13.jar:/usr/hdp/2.3.0.0-2557/storm/lib/cheshire-5.3.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/hadoop-hdfs-2.7.1.2.3.0.0-2557.jar:/usr/hdp/2.3.0.0-2557/storm/lib/httpclient-4.2.5.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clout-1.0.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/commons-configuration-1.10.jar:/usr/hdp/2.3.0.0-2557/storm/lib/clj-stacktrace-0.2.4.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tigris-0.1.1.jar:/usr/hdp/2.3.0.0-2557/storm/lib/tools.macro-0.1.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/javax.persistence-2.1.0.jar:/usr/hdp/2.3.0.0-2557/storm/lib/core.incubator-0.1.0.jar:target/storm-example-0.0.1-SNAPSHOT.jar:/usr/hdp/current/storm-supervisor/conf:/usr/hdp/2.3.0.0-2557/storm/bin
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.io.tmpdir=/tmp
+2902 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:java.compiler=<NA>
+2903 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:os.name=Linux
+2903 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:os.arch=amd64
+2903 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:os.version=2.6.32-573.3.1.el6.x86_64
+2903 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:user.name=root
+2903 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:user.home=/root
+2903 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Server environment:user.dir=/root/cloudapp-mp3
+5875 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /tmp/a4ec7404-81fe-4b19-bfbc-8904da35d16a/version-2 snapdir /tmp/a4ec7404-81fe-4b19-bfbc-8904da35d16a/version-2
+5898 [main] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - binding to port 0.0.0.0/0.0.0.0:2000
+5917 [main] INFO  backtype.storm.zookeeper - Starting inprocess zookeeper at port 2000 and dir /tmp/a4ec7404-81fe-4b19-bfbc-8904da35d16a
+6167 [main] INFO  backtype.storm.utils.Utils - Using defaults.yaml from resources
+6258 [main] INFO  backtype.storm.utils.Utils - Using storm.yaml from resources
+6524 [main] INFO  backtype.storm.daemon.nimbus - Starting Nimbus with conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx220m -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=sandbox.hortonworks.com,port=8649,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Nimbus_JVM", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2000, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 300, "logviewer.port" 8005, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "/tmp/66864d80-1b08-4316-9cba-b8fb749fe1f6", "worker.childopts" "-Xmx768m  -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Worker_%ID%_JVM", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m ", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 30, "ui.childopts" "-Xmx220m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx220m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "backtype.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" [6700 6701], "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.optimize" true, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["sandbox.hortonworks.com"], "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m  -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=56431 -javaagent:/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Supervisor_JVM", "ui.filter" nil, "topology.receiver.buffer.size" 8, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "storm.messaging.netty.flush.check.interval.ms" 10, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib", "ui.port" 8744, "storm.log.dir" "/var/log/storm", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+6525 [main] INFO  backtype.storm.daemon.nimbus - Using default scheduler
+6557 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+6805 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+6815 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@24c0fe59
+6881 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+6906 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+6907 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51125
+6925 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+6927 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+6929 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@7915e83
+6933 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+6935 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+6936 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51125
+6940 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51126
+6941 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51126
+6945 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.persistence.FileTxnLog - Creating new log file: log.1
+6997 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0000, negotiated timeout = 20000
+6997 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0000 with negotiated timeout 20000 for client /127.0.0.1:51125
+7002 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0001 with negotiated timeout 20000 for client /127.0.0.1:51126
+7003 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0001, negotiated timeout = 20000
+7006 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+7006 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+7017 [main-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+7017 [main-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+8333 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0001
+8361 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0001 closed
+8372 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+8376 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+8511 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+8515 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000/storm sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@3b5589db
+8530 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51126 which had sessionid 0x1500457c5ef0001
+8536 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+8537 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+8537 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51128
+8538 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51128
+8543 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0002 with negotiated timeout 20000 for client /127.0.0.1:51128
+8543 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0002, negotiated timeout = 20000
+8544 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+8847 [main] INFO  backtype.storm.zookeeper - Queued up for leader lock.
+8848 [main] INFO  backtype.storm.daemon.nimbus - not a leader, skipping cleanup-corrupt-topologies
+8853 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x1500457c5ef0000 type:create cxid:0x1 zxid:0xe txntype:-1 reqpath:n/a Error Path:/storm/leader-lock Error:KeeperErrorCode = NoNode for /storm/leader-lock
+8914 [timer] INFO  backtype.storm.daemon.nimbus - not a leader, skipping assignments
+8915 [timer] INFO  backtype.storm.daemon.nimbus - not a leader, skipping cleanup
+8942 [main-EventThread] INFO  backtype.storm.zookeeper - sandbox.hortonworks.com gained leadership, checking if it has all the topology code locally.
+8951 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+8952 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+8952 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@508a0d7d
+8956 [main-EventThread] INFO  backtype.storm.zookeeper - active-topology-ids [] local-topology-ids [] diff-topology []
+8957 [main-EventThread] INFO  backtype.storm.zookeeper - Accepting leadership, all active topology found localy.
+9007 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9008 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51130
+9009 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9010 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51130
+9015 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0003 with negotiated timeout 20000 for client /127.0.0.1:51130
+9016 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0003, negotiated timeout = 20000
+9017 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9018 [main-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+9071 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0003
+9075 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51130 which had sessionid 0x1500457c5ef0003
+9076 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0003 closed
+9076 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9076 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+9078 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9078 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000/storm sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@31acec57
+9086 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9092 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9094 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9093 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51131
+9095 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51131
+9095 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9096 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@5a83ae78
+9098 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0004 with negotiated timeout 20000 for client /127.0.0.1:51131
+9099 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0004, negotiated timeout = 20000
+9099 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9205 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9206 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9206 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51132
+9207 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51132
+9211 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0005 with negotiated timeout 20000 for client /127.0.0.1:51132
+9213 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0005, negotiated timeout = 20000
+9214 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9215 [main-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+9223 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0005
+9225 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0005 closed
+9226 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51132 which had sessionid 0x1500457c5ef0005
+9226 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9228 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+9229 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9231 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000/storm sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@393ddf54
+9235 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9236 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9236 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51133
+9237 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51133
+9239 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0006 with negotiated timeout 20000 for client /127.0.0.1:51133
+9240 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0006, negotiated timeout = 20000
+9240 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9312 [main] INFO  backtype.storm.daemon.supervisor - Starting Supervisor with conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx220m -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=sandbox.hortonworks.com,port=8649,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Nimbus_JVM", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2000, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 300, "logviewer.port" 8005, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "/tmp/066e339d-4655-4f82-be8d-7f530c38b344", "worker.childopts" "-Xmx768m  -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Worker_%ID%_JVM", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m ", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 30, "ui.childopts" "-Xmx220m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx220m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "backtype.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" (1024 1025 1026), "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.optimize" true, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["sandbox.hortonworks.com"], "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m  -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=56431 -javaagent:/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Supervisor_JVM", "ui.filter" nil, "topology.receiver.buffer.size" 8, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "storm.messaging.netty.flush.check.interval.ms" 10, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib", "ui.port" 8744, "storm.log.dir" "/var/log/storm", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+9378 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9379 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9380 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@122eed1
+9382 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9383 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9383 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51134
+9385 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51134
+9388 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0007 with negotiated timeout 20000 for client /127.0.0.1:51134
+9389 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0007, negotiated timeout = 20000
+9389 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9393 [main-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+9401 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0007
+9403 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51134 which had sessionid 0x1500457c5ef0007
+9404 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0007 closed
+9404 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+9410 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9411 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9412 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000/storm sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@e41210d
+9415 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9498 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51135
+9498 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9499 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51135
+9503 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0008 with negotiated timeout 20000 for client /127.0.0.1:51135
+9504 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0008, negotiated timeout = 20000
+9504 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9580 [main] INFO  backtype.storm.daemon.supervisor - Starting supervisor with id c99f1ac3-49a7-4c42-aa87-6ed27364a15f at host sandbox.hortonworks.com
+9591 [main] INFO  backtype.storm.daemon.supervisor - Starting Supervisor with conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx220m -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=sandbox.hortonworks.com,port=8649,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Nimbus_JVM", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2000, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 300, "logviewer.port" 8005, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "/tmp/5b5e288d-566d-4c4a-b23f-ae1420d67171", "worker.childopts" "-Xmx768m  -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Worker_%ID%_JVM", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m ", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 30, "ui.childopts" "-Xmx220m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx220m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "backtype.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" (1027 1028 1029), "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.optimize" true, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["sandbox.hortonworks.com"], "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m  -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=56431 -javaagent:/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Supervisor_JVM", "ui.filter" nil, "topology.receiver.buffer.size" 8, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "storm.messaging.netty.flush.check.interval.ms" 10, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib", "ui.port" 8744, "storm.log.dir" "/var/log/storm", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+9596 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9597 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9598 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@58a386c4
+9600 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9601 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9601 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51136
+9602 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51136
+9604 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef0009 with negotiated timeout 20000 for client /127.0.0.1:51136
+9604 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef0009, negotiated timeout = 20000
+9605 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9606 [main-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+9617 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0009
+9619 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+9620 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0009 closed
+9621 [main] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+9621 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51136 which had sessionid 0x1500457c5ef0009
+9622 [main] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+9628 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000/storm sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@1dbadced
+9631 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+9631 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+9631 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51137
+9632 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51137
+9636 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef000a with negotiated timeout 20000 for client /127.0.0.1:51137
+9636 [main-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef000a, negotiated timeout = 20000
+9637 [main-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9665 [main] INFO  backtype.storm.daemon.supervisor - Starting supervisor with id 3fe382af-10d8-474a-b21c-6f01c74ce8d7 at host sandbox.hortonworks.com
+9751 [main] INFO  backtype.storm.daemon.nimbus - [req 1] Access from:  principal: op:submitTopology
+9939 [main] INFO  backtype.storm.daemon.nimbus - Received topology submission for word-count with conf {"topology.max.task.parallelism" 3, "topology.submitter.principal" "", "topology.acker.executors" nil, "topology.debug" true, "storm.zookeeper.superACL" nil, "topology.users" (), "topology.submitter.user" "", "topology.kryo.register" nil, "topology.kryo.decorators" (), "storm.id" "word-count-1-1443181876", "topology.name" "word-count"}
+9958 [main] INFO  backtype.storm.daemon.nimbus - nimbus file location:/tmp/66864d80-1b08-4316-9cba-b8fb749fe1f6/nimbus/stormdist/word-count-1-1443181876
+10021 [main] INFO  backtype.storm.daemon.nimbus - desired replication count of 1 not achieved but we have hit the max wait time 60 so moving on with replication count = 0
+10058 [main] INFO  backtype.storm.daemon.nimbus - Activating word-count: word-count-1-1443181876
+10335 [main] INFO  backtype.storm.scheduler.EvenScheduler - Available slots: (["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1024] ["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1025] ["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1026] ["3fe382af-10d8-474a-b21c-6f01c74ce8d7" 1027] ["3fe382af-10d8-474a-b21c-6f01c74ce8d7" 1028] ["3fe382af-10d8-474a-b21c-6f01c74ce8d7" 1029])
+10480 [main] INFO  backtype.storm.daemon.nimbus - Setting new assignment for topology id word-count-1-1443181876: #backtype.storm.daemon.common.Assignment{:master-code-dir "/tmp/66864d80-1b08-4316-9cba-b8fb749fe1f6/nimbus/stormdist/word-count-1-1443181876", :node->host {"c99f1ac3-49a7-4c42-aa87-6ed27364a15f" "sandbox.hortonworks.com"}, :executor->node+port {[3 3] ["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1024], [2 2] ["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1024], [1 1] ["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1024], [4 4] ["c99f1ac3-49a7-4c42-aa87-6ed27364a15f" 1024]}, :executor->start-time-secs {[4 4] 1443181877, [3 3] 1443181877, [2 2] 1443181877, [1 1] 1443181877}}
+16206 [Thread-4] INFO  backtype.storm.daemon.supervisor - Launching worker with assignment {:storm-id "word-count-1-1443181876", :executors [[1 1] [2 2] [3 3] [4 4]]} for this supervisor c99f1ac3-49a7-4c42-aa87-6ed27364a15f on port 1024 with id 11765046-ca88-43e8-a570-e2ac361803c1
+16215 [Thread-4] INFO  backtype.storm.daemon.worker - Launching worker for word-count-1-1443181876 on c99f1ac3-49a7-4c42-aa87-6ed27364a15f:1024 with id 11765046-ca88-43e8-a570-e2ac361803c1 and conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx220m -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=sandbox.hortonworks.com,port=8649,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Nimbus_JVM", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2000, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 300, "logviewer.port" 8005, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "/tmp/066e339d-4655-4f82-be8d-7f530c38b344", "worker.childopts" "-Xmx768m  -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Worker_%ID%_JVM", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m ", "topology.environment" nil, "topology.debug" false, "storm.messaging.netty.max_retries" 30, "ui.childopts" "-Xmx220m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx220m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "backtype.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" (1024 1025 1026), "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.optimize" true, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["sandbox.hortonworks.com"], "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m  -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=56431 -javaagent:/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Supervisor_JVM", "ui.filter" nil, "topology.receiver.buffer.size" 8, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "storm.messaging.netty.flush.check.interval.ms" 10, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib", "ui.port" 8744, "storm.log.dir" "/var/log/storm", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+16222 [Thread-4] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+16224 [Thread-4] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+16226 [Thread-4] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000 sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@2b272f68
+16262 [Thread-4-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+16263 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51140
+16263 [Thread-4-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+16267 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51140
+16270 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef000b with negotiated timeout 20000 for client /127.0.0.1:51140
+16270 [Thread-4-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef000b, negotiated timeout = 20000
+16270 [Thread-4-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+16272 [Thread-4-EventThread] INFO  backtype.storm.zookeeper - Zookeeper state update: :connected:none
+16276 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef000b
+16279 [Thread-4] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef000b closed
+16279 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51140 which had sessionid 0x1500457c5ef000b
+16280 [Thread-4] INFO  backtype.storm.utils.StormBoundedExponentialBackoffRetry - The baseSleepTimeMs [1000] the maxSleepTimeMs [30000] the maxRetries [5]
+16280 [Thread-4-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+16287 [Thread-4] INFO  org.apache.storm.curator.framework.imps.CuratorFrameworkImpl - Starting
+16288 [Thread-4] INFO  org.apache.storm.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:2000/storm sessionTimeout=20000 watcher=org.apache.storm.curator.ConnectionState@5e7385ab
+16298 [Thread-4-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Opening socket connection to server localhost.localdomain/127.0.0.1:2000. Will not attempt to authenticate using SASL (unknown error)
+16299 [Thread-4-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Socket connection established to localhost.localdomain/127.0.0.1:2000, initiating session
+16299 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51141
+16300 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51141
+16302 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - Established session 0x1500457c5ef000c with negotiated timeout 20000 for client /127.0.0.1:51141
+16303 [Thread-4-SendThread(localhost.localdomain:2000)] INFO  org.apache.storm.zookeeper.ClientCnxn - Session establishment complete on server localhost.localdomain/127.0.0.1:2000, sessionid = 0x1500457c5ef000c, negotiated timeout = 20000
+16303 [Thread-4-EventThread] INFO  org.apache.storm.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+16334 [Thread-4] INFO  backtype.storm.security.auth.AuthUtils - Got AutoCreds []
+16347 [Thread-4] INFO  backtype.storm.daemon.worker - Reading Assignments.
+16491 [Thread-4] INFO  backtype.storm.daemon.worker - Launching receive-thread for c99f1ac3-49a7-4c42-aa87-6ed27364a15f:1024
+16509 [Thread-7-worker-receiver-thread-0] INFO  backtype.storm.messaging.loader - Starting receive-thread: [stormId: word-count-1-1443181876, port: 1024, thread-id: 0 ]
+17442 [refresh-active-timer] INFO  backtype.storm.daemon.worker - All connections are ready for worker c99f1ac3-49a7-4c42-aa87-6ed27364a15f:1024 with id 11765046-ca88-43e8-a570-e2ac361803c1
+17832 [Thread-4] INFO  backtype.storm.daemon.executor - Loading executor count:[2 2]
+17864 [Thread-4] INFO  backtype.storm.daemon.task - Emitting: count __system ["startup"]
+17865 [Thread-4] INFO  backtype.storm.daemon.executor - Loaded executor tasks count:[2 2]
+17910 [Thread-4] INFO  backtype.storm.daemon.executor - Finished loading executor count:[2 2]
+17993 [Thread-4] INFO  backtype.storm.daemon.executor - Loading executor split:[3 3]
+18002 [Thread-4] INFO  backtype.storm.daemon.task - Emitting: split __system ["startup"]
+18003 [Thread-4] INFO  backtype.storm.daemon.executor - Loaded executor tasks split:[3 3]
+18017 [Thread-4] INFO  backtype.storm.daemon.executor - Finished loading executor split:[3 3]
+18060 [Thread-4] INFO  backtype.storm.daemon.executor - Loading executor __acker:[1 1]
+18064 [Thread-4] INFO  backtype.storm.daemon.task - Emitting: __acker __system ["startup"]
+18065 [Thread-4] INFO  backtype.storm.daemon.executor - Loaded executor tasks __acker:[1 1]
+18077 [Thread-4] INFO  backtype.storm.daemon.executor - Timeouts disabled for executor __acker:[1 1]
+18077 [Thread-4] INFO  backtype.storm.daemon.executor - Finished loading executor __acker:[1 1]
+18107 [Thread-4] INFO  backtype.storm.daemon.executor - Loading executor __system:[-1 -1]
+18110 [Thread-4] INFO  backtype.storm.daemon.task - Emitting: __system __system ["startup"]
+18111 [Thread-4] INFO  backtype.storm.daemon.executor - Loaded executor tasks __system:[-1 -1]
+18124 [Thread-4] INFO  backtype.storm.daemon.executor - Finished loading executor __system:[-1 -1]
+18161 [Thread-4] INFO  backtype.storm.daemon.executor - Loading executor spout:[4 4]
+18163 [Thread-4] INFO  backtype.storm.daemon.task - Emitting: spout __system ["startup"]
+18164 [Thread-4] INFO  backtype.storm.daemon.executor - Loaded executor tasks spout:[4 4]
+18201 [Thread-4] INFO  backtype.storm.daemon.executor - Finished loading executor spout:[4 4]
+18238 [Thread-4] INFO  backtype.storm.daemon.worker - Worker has topology config {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx220m -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=sandbox.hortonworks.com,port=8649,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Nimbus_JVM", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" 3, "zmq.threads" 1, "storm.group.mapping.service" "backtype.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "topology.multilang.serializer" "backtype.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "backtype.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.principal.tolocal" "backtype.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "storm.zookeeper.port" 2000, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "drpc.worker.threads" 64, "drpc.queue.size" 128, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 300, "logviewer.port" 8005, "nimbus.reassign" true, "topology.executor.send.buffer.size" 1024, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "topology.submitter.principal" "", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "storm.local.dir" "/tmp/066e339d-4655-4f82-be8d-7f530c38b344", "worker.childopts" "-Xmx768m  -javaagent:/usr/hdp/current/storm-client/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-client/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Worker_%ID%_JVM", "storm.auth.simple-white-list.users" [], "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "backtype.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "logviewer.childopts" "-Xmx128m ", "topology.environment" nil, "topology.debug" true, "storm.messaging.netty.max_retries" 30, "ui.childopts" "-Xmx220m", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx220m", "drpc.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "backtype.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "backtype.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "storm.zookeeper.superACL" nil, "drpc.port" 3772, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "task.credentials.poll.secs" 30, "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "supervisor.slots.ports" (1024 1025 1026), "topology.transfer.buffer.size" 1024, "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "topology.executor.receive.buffer.size" 1024, "topology.optimize" true, "topology.users" [], "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "worker.heartbeat.frequency.secs" 1, "ui.http.creds.plugin" "backtype.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.submitter.user" "", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "task.refresh.poll.secs" 10, "task.heartbeat.frequency.secs" 3, "storm.messaging.netty.max_wait_ms" 1000, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "backtype.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "topology.kryo.register" nil, "worker.gc.childopts" "", "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["sandbox.hortonworks.com"], "nimbus.cleanup.inbox.freq.secs" 600, "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "supervisor.childopts" "-Xmx256m  -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=56431 -javaagent:/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/lib/jmxetric-1.0.4.jar=host=localhost,port=8650,wireformat31x=true,mode=multicast,config=/usr/hdp/current/storm-supervisor/contrib/storm-jmxetric/conf/jmxetric-conf.xml,process=Supervisor_JVM", "ui.filter" nil, "topology.receiver.buffer.size" 8, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "storm.messaging.netty.flush.check.interval.ms" 10, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib:/usr/hdp/current/storm-client/lib", "ui.port" 8744, "storm.log.dir" "/var/log/storm", "topology.kryo.decorators" [], "storm.id" "word-count-1-1443181876", "topology.name" "word-count", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+18238 [Thread-4] INFO  backtype.storm.daemon.worker - Worker 11765046-ca88-43e8-a570-e2ac361803c1 for storm word-count-1-1443181876 on c99f1ac3-49a7-4c42-aa87-6ed27364a15f:1024 has finished loading
+18239 [Thread-4] INFO  backtype.storm.config - SET worker-user 11765046-ca88-43e8-a570-e2ac361803c1 
+18534 [Thread-9-count] INFO  backtype.storm.daemon.executor - Preparing bolt count:(2)
+18535 [Thread-13-__acker] INFO  backtype.storm.daemon.executor - Preparing bolt __acker:(1)
+18536 [Thread-11-split] INFO  backtype.storm.daemon.executor - Preparing bolt split:(3)
+18535 [Thread-17-spout] INFO  backtype.storm.daemon.executor - Opening spout spout:(4)
+18563 [Thread-17-spout] INFO  backtype.storm.daemon.executor - Opened spout spout:(4)
+18569 [Thread-17-spout] INFO  backtype.storm.daemon.executor - Activating spout spout:(4)
+18582 [Thread-9-count] INFO  backtype.storm.daemon.executor - Prepared bolt count:(2)
+18597 [Thread-15-__system] INFO  backtype.storm.daemon.executor - Preparing bolt __system:(-1)
+18605 [Thread-11-split] INFO  backtype.storm.daemon.executor - Prepared bolt split:(3)
+18626 [Thread-13-__acker] INFO  backtype.storm.daemon.executor - Prepared bolt __acker:(1)
+18672 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+18680 [Thread-15-__system] INFO  backtype.storm.daemon.executor - Prepared bolt __system:(-1)
+18775 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+18888 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+18989 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+19092 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+19199 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+19304 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+19406 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+19508 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+19609 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+19710 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+19811 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+19912 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+20014 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+20118 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+20220 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+20322 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+20423 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+20524 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+20627 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+20728 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+20830 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+20931 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+21033 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+21135 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+21236 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+21337 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+21439 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+21541 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+21642 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+21744 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+21845 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+21946 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+22047 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+22150 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+22259 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+22361 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+22463 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+22569 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+22670 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+22771 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+22873 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+22975 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+23076 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+23178 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+23279 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+23381 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+23482 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+23584 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+23686 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+23787 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+23889 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+23991 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+24095 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+24196 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+24297 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+24403 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+24511 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+24617 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+24729 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+24833 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+24935 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+25039 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+25140 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+25242 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+25345 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+25447 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+25549 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+25650 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+25751 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+25853 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+25954 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+26056 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+26158 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+26260 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+26361 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+26463 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+26569 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+26670 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+26775 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+26876 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+26977 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+27079 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+27182 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+27291 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+27394 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+27496 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+27597 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+27700 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+27801 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+27903 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+28004 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+28106 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+28207 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+28308 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+28409 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+28554 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+28656 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+28758 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+29063 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+29165 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+29266 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+29368 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+29470 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+29571 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+29673 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+29776 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+29879 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+29980 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+30082 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+30183 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+30284 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+30385 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+30486 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+30587 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+30688 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+30789 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+30890 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+30991 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+31092 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+31194 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+31295 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+31396 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+31497 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+31598 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+31701 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+31814 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+31916 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+32016 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+32117 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+32219 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+32319 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+32420 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+32520 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+32621 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+32722 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+32822 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+32923 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+33024 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+33125 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+33226 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+33328 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+33428 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+33529 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+33630 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+33730 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+33831 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+33932 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+34032 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+34133 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+34234 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+34335 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+34435 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+34541 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+34647 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+34748 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+34849 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+34950 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+35051 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+35152 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+35252 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+35353 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+35454 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+35555 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+35658 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+35759 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+35860 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+35961 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+36062 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+36163 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+36263 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+36364 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+36465 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+36565 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+36666 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+36767 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+36867 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+36968 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+37068 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+37169 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+37270 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+37370 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+37471 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+37572 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+37673 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+37774 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+37875 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+37976 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+38076 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+38177 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+38278 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+38379 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+38480 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+38590 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+38691 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+38791 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+38892 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+38992 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+39093 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+39194 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+39294 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+39395 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+39496 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+39599 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+39700 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+39801 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+39903 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+40014 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+40116 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+40217 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+40318 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+40426 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+40528 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+40628 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+40730 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+40831 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+40932 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+41033 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+41134 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+41237 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+41339 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+41440 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+41541 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+41644 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+41745 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+41847 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+41948 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+42048 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+42149 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+42251 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+42352 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+42453 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+42554 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+42655 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+42756 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+42857 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+42958 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+43059 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+43160 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+43261 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+43362 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+43463 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+43563 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+43664 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+43765 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+43865 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+43966 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+44160 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+44262 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+44363 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+44464 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+44565 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+44666 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+44766 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+44867 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+44968 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+45068 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+45169 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+45270 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+45371 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+45472 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+45572 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+45673 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+45773 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+45874 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+45975 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+46075 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+46176 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+46277 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+46378 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+46478 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+46579 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+46679 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+46780 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+46880 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+46981 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+47082 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+47182 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+47283 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+47384 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+47485 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+47585 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+47686 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+47787 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+47887 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+47988 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+48089 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+48189 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+48290 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+48290 [Thread-17-spout] INFO  backtype.storm.daemon.executor - Processing received message FOR  TUPLE: source: __system:-1, stream: __tick, id: {}, [30]
+48391 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+48491 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+48592 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+48701 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+48802 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+48902 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+49003 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+49103 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+49204 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+49304 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+49405 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+49505 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+49606 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+49706 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+49807 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+49907 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+50008 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+50108 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+50209 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+50309 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+50410 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+50510 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+50611 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+50713 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+50814 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+50914 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+51014 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+51115 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+51216 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+51316 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+51418 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+51518 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+51619 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+51719 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+51820 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+51921 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+52022 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+52125 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+52229 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+52335 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+52436 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+52538 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+52639 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+52740 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+52841 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+52943 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+53045 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+53146 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+53247 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+53348 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+53449 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+53551 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+53653 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+53755 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+53857 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+53959 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+54060 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+54161 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+54262 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+54364 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+54465 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+54566 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+54668 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+54769 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+54871 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+54973 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+55075 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+55176 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+55279 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+55381 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+55485 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+55587 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+55688 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+55800 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+55901 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+56004 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+56105 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+56206 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+56307 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+56409 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+56511 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+56612 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+56716 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+56818 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+56919 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+57021 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+57122 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+57224 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+57326 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+57428 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+57530 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+57632 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+57733 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+57834 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+57936 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+58037 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+58138 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+58240 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+58342 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+58444 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+58545 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+58646 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+58749 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+58851 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+58952 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+59054 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+59156 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+59257 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+59359 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+59462 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+59563 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+59665 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+59768 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+59869 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+59970 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+60072 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+60175 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+60286 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+60387 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+60489 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+60591 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+60693 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+60795 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+60896 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+60998 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+61099 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+61201 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+61302 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+61405 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+61507 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+61609 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+61710 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+61812 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+61913 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+62020 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+62122 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+62223 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+62325 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+62426 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+62528 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+62629 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+62738 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+62840 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+62942 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+63043 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+63145 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+63246 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+63347 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+63449 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+63551 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+63652 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+63753 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+63854 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+63956 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+64057 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+64159 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+64260 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+64363 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+64464 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+64565 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+64666 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+64768 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+64870 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+64971 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+65072 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+65173 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+65275 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+65377 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+65479 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+65580 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+65683 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+65784 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+65888 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+65989 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+66090 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+66306 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+66407 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+66509 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+66617 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+66747 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+66861 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+66962 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+67063 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+67164 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+67266 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+67366 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+67468 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+67569 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+67670 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+67772 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+67872 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+67974 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+68075 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+68177 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+68279 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+68380 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+68482 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+68582 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+68685 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+68791 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+68894 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+68995 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+69096 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+69197 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+69299 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+69400 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+69501 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+69605 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+69722 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+69823 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+69925 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+70027 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [i am at two with nature]
+70129 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [the cow jumped over the moon]
+70230 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [snow white and the seven dwarfs]
+70332 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+70434 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+70506 [main] INFO  backtype.storm.daemon.nimbus - Shutting down master
+70528 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0002
+70531 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0002 closed
+70532 [main] INFO  backtype.storm.zookeeper - closing zookeeper connection of leader elector.
+70535 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [four score and seven years ago]
+70549 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] WARN  org.apache.storm.zookeeper.server.NIOServerCnxn - caught end of stream exception
+org.apache.storm.zookeeper.server.ServerCnxn$EndOfStreamException: Unable to read additional data from client sessionid 0x1500457c5ef0002, likely client has closed socket
+	at org.apache.storm.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228) ~[storm-core-0.10.0.2.3.0.0-2557.jar:0.10.0.2.3.0.0-2557]
+	at org.apache.storm.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208) [storm-core-0.10.0.2.3.0.0-2557.jar:0.10.0.2.3.0.0-2557]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_85]
+70550 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51128 which had sessionid 0x1500457c5ef0002
+70551 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70555 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0000
+70565 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51125 which had sessionid 0x1500457c5ef0000
+70567 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0000 closed
+70567 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70568 [main] INFO  backtype.storm.daemon.nimbus - Shut down master
+70591 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0004
+70593 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51131 which had sessionid 0x1500457c5ef0004
+70594 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0004 closed
+70594 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70596 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0006
+70599 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51133 which had sessionid 0x1500457c5ef0006
+70600 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0006 closed
+70602 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70603 [main] INFO  backtype.storm.daemon.supervisor - Shutting down c99f1ac3-49a7-4c42-aa87-6ed27364a15f:11765046-ca88-43e8-a570-e2ac361803c1
+70605 [main] INFO  backtype.storm.config - GET worker-user 11765046-ca88-43e8-a570-e2ac361803c1
+70612 [main] INFO  backtype.storm.process-simulator - Killing process 8db4efc2-56c0-49fa-bab0-5fbb7f0a7bc5
+70614 [main] INFO  backtype.storm.daemon.worker - Shutting down worker word-count-1-1443181876 c99f1ac3-49a7-4c42-aa87-6ed27364a15f 1024
+70615 [main] INFO  backtype.storm.daemon.worker - Shutting down receive thread
+70615 [main] INFO  backtype.storm.messaging.loader - Shutting down receiving-thread: [word-count-1-1443181876, 1024]
+70616 [Thread-7-worker-receiver-thread-0] INFO  backtype.storm.messaging.loader - Receiving-thread:[word-count-1-1443181876, 1024] received shutdown notice
+70616 [main] INFO  backtype.storm.messaging.loader - Waiting for receiving-thread:[word-count-1-1443181876, 1024] to die
+70619 [main] INFO  backtype.storm.messaging.loader - Shutdown receiving-thread: [word-count-1-1443181876, 1024]
+70619 [main] INFO  backtype.storm.daemon.worker - Shut down receive thread
+70619 [main] INFO  backtype.storm.daemon.worker - Terminating messaging context
+70620 [main] INFO  backtype.storm.daemon.worker - Shutting down executors
+70621 [main] INFO  backtype.storm.daemon.executor - Shutting down executor count:[2 2]
+70622 [Thread-9-count] INFO  backtype.storm.util - Async loop interrupted!
+70624 [Thread-8-disruptor-executor[2 2]-send-queue] INFO  backtype.storm.util - Async loop interrupted!
+70625 [main] INFO  backtype.storm.daemon.executor - Shut down executor count:[2 2]
+70626 [main] INFO  backtype.storm.daemon.executor - Shutting down executor split:[3 3]
+70626 [Thread-10-disruptor-executor[3 3]-send-queue] INFO  backtype.storm.util - Async loop interrupted!
+70628 [Thread-11-split] INFO  backtype.storm.util - Async loop interrupted!
+70629 [main] INFO  backtype.storm.daemon.executor - Shut down executor split:[3 3]
+70631 [main] INFO  backtype.storm.daemon.executor - Shutting down executor __acker:[1 1]
+70632 [Thread-12-disruptor-executor[1 1]-send-queue] INFO  backtype.storm.util - Async loop interrupted!
+70633 [Thread-13-__acker] INFO  backtype.storm.util - Async loop interrupted!
+70635 [main] INFO  backtype.storm.daemon.executor - Shut down executor __acker:[1 1]
+70635 [main] INFO  backtype.storm.daemon.executor - Shutting down executor __system:[-1 -1]
+70636 [Thread-15-__system] INFO  backtype.storm.util - Async loop interrupted!
+70636 [Thread-17-spout] INFO  backtype.storm.daemon.task - Emitting: spout default [an apple a day keeps the doctor away]
+70638 [Thread-14-disruptor-executor[-1 -1]-send-queue] INFO  backtype.storm.util - Async loop interrupted!
+70639 [main] INFO  backtype.storm.daemon.executor - Shut down executor __system:[-1 -1]
+70639 [main] INFO  backtype.storm.daemon.executor - Shutting down executor spout:[4 4]
+70640 [Thread-16-disruptor-executor[4 4]-send-queue] INFO  backtype.storm.util - Async loop interrupted!
+70641 [Thread-17-spout] INFO  backtype.storm.util - Async loop interrupted!
+70643 [main] INFO  backtype.storm.daemon.executor - Shut down executor spout:[4 4]
+70644 [main] INFO  backtype.storm.daemon.worker - Shut down executors
+70644 [main] INFO  backtype.storm.daemon.worker - Shutting down transfer thread
+70645 [Thread-18-disruptor-worker-transfer-queue] INFO  backtype.storm.util - Async loop interrupted!
+70646 [main] INFO  backtype.storm.daemon.worker - Shut down transfer thread
+70650 [main] INFO  backtype.storm.daemon.worker - Shutting down default resources
+70651 [main] INFO  backtype.storm.daemon.worker - Shut down default resources
+70666 [main] INFO  backtype.storm.daemon.worker - Disconnecting from storm cluster state context
+70668 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef000c
+70670 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51141 which had sessionid 0x1500457c5ef000c
+70670 [Thread-4-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70670 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef000c closed
+70672 [main] INFO  backtype.storm.daemon.worker - Shut down worker word-count-1-1443181876 c99f1ac3-49a7-4c42-aa87-6ed27364a15f 1024
+70688 [main] INFO  backtype.storm.config - REMOVE worker-user 11765046-ca88-43e8-a570-e2ac361803c1
+70689 [main] INFO  backtype.storm.daemon.supervisor - Shut down c99f1ac3-49a7-4c42-aa87-6ed27364a15f:11765046-ca88-43e8-a570-e2ac361803c1
+70689 [main] INFO  backtype.storm.daemon.supervisor - Shutting down supervisor c99f1ac3-49a7-4c42-aa87-6ed27364a15f
+70691 [Thread-3] INFO  backtype.storm.event - Event manager interrupted
+70692 [Thread-4] INFO  backtype.storm.event - Event manager interrupted
+70695 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef0008
+70697 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70697 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51135 which had sessionid 0x1500457c5ef0008
+70697 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef0008 closed
+70710 [main] INFO  backtype.storm.daemon.supervisor - Shutting down supervisor 3fe382af-10d8-474a-b21c-6f01c74ce8d7
+70711 [Thread-5] INFO  backtype.storm.event - Event manager interrupted
+70712 [Thread-6] INFO  backtype.storm.event - Event manager interrupted
+70715 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x1500457c5ef000a
+70717 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51137 which had sessionid 0x1500457c5ef000a
+70717 [main] INFO  org.apache.storm.zookeeper.ZooKeeper - Session: 0x1500457c5ef000a closed
+70718 [main-EventThread] INFO  org.apache.storm.zookeeper.ClientCnxn - EventThread shut down
+70719 [main] INFO  backtype.storm.testing - Shutting down in process zookeeper
+70725 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2000] INFO  org.apache.storm.zookeeper.server.NIOServerCnxnFactory - NIOServerCnxn factory exited run method
+70727 [main] INFO  org.apache.storm.zookeeper.server.ZooKeeperServer - shutting down
+70727 [main] INFO  org.apache.storm.zookeeper.server.SessionTrackerImpl - Shutting down
+70727 [main] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - Shutting down
+70728 [main] INFO  org.apache.storm.zookeeper.server.SyncRequestProcessor - Shutting down
+70728 [ProcessThread(sid:0 cport:-1):] INFO  org.apache.storm.zookeeper.server.PrepRequestProcessor - PrepRequestProcessor exited loop!
+70728 [SyncThread:0] INFO  org.apache.storm.zookeeper.server.SyncRequestProcessor - SyncRequestProcessor exited!
+70729 [main] INFO  org.apache.storm.zookeeper.server.FinalRequestProcessor - shutdown of request processor complete
+70730 [main] INFO  backtype.storm.testing - Done shutting down in process zookeeper
+70730 [main] INFO  backtype.storm.testing - Deleting temporary path /tmp/66864d80-1b08-4316-9cba-b8fb749fe1f6
+70734 [main] INFO  backtype.storm.testing - Deleting temporary path /tmp/a4ec7404-81fe-4b19-bfbc-8904da35d16a
+70735 [main] INFO  backtype.storm.testing - Deleting temporary path /tmp/066e339d-4655-4f82-be8d-7f530c38b344
+70739 [main] INFO  backtype.storm.testing - Deleting temporary path /tmp/5b5e288d-566d-4c4a-b23f-ae1420d67171
+71317 [SessionTracker] INFO  org.apache.storm.zookeeper.server.SessionTrackerImpl - SessionTrackerImpl exited loop!
